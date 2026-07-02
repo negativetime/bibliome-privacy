@@ -35,7 +35,7 @@
   <span class="pill">On-device · Private</span>
   <h1>Bibliome</h1>
   <p class="tagline">Privacy Policy &amp; Support</p>
-  <p class="updated">Last updated: June 18, 2026</p>
+  <p class="updated">Last updated: July 2, 2026</p>
 </header>
 
 <hr>
@@ -43,7 +43,8 @@
 <h2 id="privacy">Privacy Policy</h2>
 
 <p class="lede">Bibliome is built so your documents stay yours. The app runs entirely on your
-device and has no network access — it cannot send anything anywhere.</p>
+device and makes no network connections of its own — no servers of ours, no third parties.
+The only data movement anywhere is Apple iCloud, inside your own account, described below.</p>
 
 <h3>What we collect</h3>
 <p><strong>Nothing.</strong> Bibliome has no servers, no accounts, no analytics, and no
@@ -57,10 +58,18 @@ any third party for processing.</p>
 
 <h3>Optional iCloud sync</h3>
 <p>iCloud sync is <strong>off by default</strong>. If you turn it on, your library is shared
-across <em>your own</em> Apple devices through <em>your own</em> iCloud account. That data
+across <em>your own</em> Apple devices through <em>your own</em> iCloud account — including
+reading positions and bookmarks, kept by document name. That data
 lives in your personal iCloud — performed by iOS and macOS, not by Bibliome. We have no
 access to it, and it is never routed through a third-party server. You can turn sync off at
 any time; your library stays on your devices.</p>
+
+<h3>Device presence file</h3>
+<p>When your device is signed into iCloud, each Bibliome app saves one small file into your
+own iCloud container so your devices can notice each other and offer to link up. It contains
+only the app version, a date, and your library's document count and total size —
+<strong>never document names or contents</strong>. It exists only in your iCloud; we can never
+see it. If you're not signed into iCloud, nothing is written.</p>
 
 <h3>Device access</h3>
 <p>Bibliome may ask permission to use your <strong>camera</strong> (to scan paper into PDFs)
@@ -87,8 +96,10 @@ and we'll help.</p>
       device; your organized library lives on the Library tab.</li>
   <li><strong>How do I sync across devices?</strong> Settings → Sync → turn it on. Your library
       then syncs through your own iCloud (it can take a little while to download the first time).</li>
-  <li><strong>Is anything sent to the internet?</strong> No — the app has no network access. Only
-      optional iCloud sync moves your files, and only inside your own Apple account.</li>
+  <li><strong>Is anything sent to the internet?</strong> The app makes no connections of its own
+      and talks to no servers of ours or anyone else's. The only data movement is Apple iCloud
+      inside your own account: optional library sync, plus a tiny device-presence file (app
+      version and document count — never names or contents) so your devices can find each other.</li>
 </ul>
 
 <footer>
