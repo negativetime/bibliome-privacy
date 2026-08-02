@@ -135,6 +135,15 @@ and we'll help.</p>
       risk the scan hanging while it waits on a download. If you want full coverage, set your
       cloud app to keep that folder downloaded/available offline first — once a file is local,
       Bibliome indexes it like any other.</li>
+  <li><strong>My scanned document is long — is all of it searchable?</strong> Only up to the page
+      depth set in Settings → Scanned documents (12 pages by default; you can raise it, including
+      to every page). Pages beyond that limit aren't partly indexed — they're simply not searchable
+      yet, with no per-document warning that a long scan stopped short. Raising the depth later
+      backfills those pages without redoing OCR that's already done.</li>
+  <li><strong>Why is a scanned page's text garbled in search?</strong> Bibliome's on-device OCR
+      indexes its best reading of a page even when the scan quality is poor — it doesn't discard a
+      low-confidence result, so a badly scanned or blurry page can surface odd text. This is on our
+      list to improve.</li>
 </ul>
 
 <hr>
