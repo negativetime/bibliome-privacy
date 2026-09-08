@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bibliome — Help</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px; margin: 0 auto; padding: 40px 22px 80px; color: #1c1c1e;
+  }
+  @media (prefers-color-scheme: dark) { body { background:#0b0b0c; color:#e9e9ea; } a { color:#6bb3ff; } }
+  header { margin-bottom: 8px; }
+  h1 { font-size: 1.8rem; margin: 0 0 2px; }
+  h2 { font-size: 1.25rem; margin: 2.2em 0 .4em; }
+  h3 { font-size: 1.02rem; margin: 1.4em 0 .2em; }
+  .tagline { color: #6b6b70; margin: 0 0 6px; }
+  .updated { color: #8a8a8f; font-size: .85rem; }
+  a { color: #0a66ff; }
+  .lede { font-size: 1.08rem; }
+  ul { padding-left: 1.2em; }
+  li { margin: .3em 0; }
+  .pill { display:inline-block; background:#0a66ff14; color:#0a66ff; border-radius:999px; padding:2px 10px; font-size:.8rem; }
+  @media (prefers-color-scheme: dark){ .pill{ background:#6bb3ff22; color:#9ecbff; } }
+  hr { border:none; border-top:1px solid #00000014; margin:2.4em 0; }
+  @media (prefers-color-scheme: dark){ hr{ border-top-color:#ffffff1a; } }
+  footer { color:#8a8a8f; font-size:.85rem; margin-top:2.4em; }
+
+  .langswitch { font-size: .82rem; margin: 0 0 14px; color: #8a8a8f; }
+  .langswitch a { color: #0a66ff; text-decoration: none; }
+  .langswitch strong { color: inherit; }
+
+  /* — Help page additions — */
+  .chips { position: sticky; top: 0; z-index: 5; background: #fff; margin: 0 -22px;
+           padding: 10px 22px 12px; border-bottom: 1px solid #00000014; }
+  @media (prefers-color-scheme: dark) { .chips { background:#0b0b0c; border-bottom-color:#ffffff1a; } }
+  .chips ul { list-style:none; display:flex; flex-wrap:wrap; gap:6px; margin:0; padding:0; }
+  .chips li { margin:0; }
+  .chips a { text-decoration:none; }
+  [id] { scroll-margin-top: 64px; }
+  .topic { border:1px solid #00000014; border-radius:12px; padding:14px 16px; margin:12px 0; }
+  @media (prefers-color-scheme: dark) { .topic { border-color:#ffffff1a; } }
+  .trouble { margin:1em 0; }
+  .trouble dt { margin:0 0 .3em; }
+  .trouble dd { margin:.3em 0 0; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="langswitch"><a href="/bibliome-privacy/">Requirements, Privacy &amp; Accessibility</a></nav>
+  <span class="pill">On-device · Private</span>
+  <h1>Bibliome Help</h1>
+  <p class="tagline">Everything Bibliome does, on Mac and on iPhone &amp; iPad — and what to do when something looks wrong.</p>
+</header>
+
+<p class="lede">Bibliome turns a pile of scattered documents into a tidy, searchable library. Everything runs on your own device: no account, no subscription, no server, and no internet connection of the app's own. This page covers both apps. If you only want the short version, the Mac app has the same guide built in under <strong>Help</strong> in the sidebar, or <strong>⌘?</strong>.</p>
+
+<nav class="chips" aria-label="Jump to section">
+  <ul>
+    <li><a class="pill" href="#getting-started">Getting started</a></li>
+    <li><a class="pill" href="#filing-your-library-the-one-button">Filing your library</a></li>
+    <li><a class="pill" href="#reading-marking-up">Reading &amp; marking up</a></li>
+    <li><a class="pill" href="#finding-things">Finding things</a></li>
+    <li><a class="pill" href="#ask-summarize">Ask &amp; Summarize</a></li>
+    <li><a class="pill" href="#smart-groups">Smart Groups</a></li>
+    <li><a class="pill" href="#tools">Tools</a></li>
+    <li><a class="pill" href="#scanned-documents">Scanned documents</a></li>
+    <li><a class="pill" href="#settings">Settings</a></li>
+    <li><a class="pill" href="#iphone-ipad">iPhone &amp; iPad</a></li>
+    <li><a class="pill" href="#sync">Sync</a></li>
+    <li><a class="pill" href="#using-your-library-from-other-apps-mcp">Other apps (MCP)</a></li>
+    <li><a class="pill" href="#troubleshooting">Troubleshooting</a></li>
+  </ul>
+</nav>
+
+<hr>
+
+<section id="getting-started">
+<h2>Getting started</h2>
+
+<h3>On the Mac</h3>
+<ol>
+  <li>Open <strong>Settings</strong> (<strong>⌘,</strong>) → <strong>Paths</strong> and choose your <strong>Library folder</strong>. This is where Bibliome keeps, or records, your library. Because the app is sandboxed, choosing the folder is also how you grant it access.</li>
+  <li>Still in Settings, open <strong>Organize</strong> and add the folders your documents actually live in under <strong>Additional folders to scan</strong> — Downloads, Desktop, an old "PDFs" folder, an external drive. Each one opens a picker, because picking it is what grants access to it.</li>
+  <li>Go <strong>Home</strong> and click the big button. It reads every document, works out what each one is, files or tags it, and makes all of it searchable — in one pass.</li>
+  <li>When it finishes, <strong>View Library</strong> and <strong>Ask Your Library</strong> light up.</li>
+</ol>
+<p>Set your <strong>Owner name</strong> in Settings → Paths if you want documents that mention you filed into a <em>Personal</em> folder.</p>
+
+<h3>On iPhone &amp; iPad</h3>
+<ol>
+  <li>Open the app and choose how you use Bibliome: <strong>on my Mac as well</strong>, or <strong>just on this device</strong>. Both are first-class; the choice only decides which screen you land on.</li>
+  <li>On the <strong>Scan</strong> tab, add documents from Files, iCloud Drive, or the camera.</li>
+  <li>Tap <strong>Organize</strong> to file them.</li>
+</ol>
+<p>The iPhone and iPad app is free. It is a full library on its own, and it is also the companion to the Mac app if you turn on sync.</p>
+</section>
+
+<hr>
+
+<section id="filing-your-library-the-one-button">
+<h2>Filing your library — the one button</h2>
+
+<p>The main button has three possible behaviours, and which one you get is a setting, not a guess. Choose it in <strong>Settings → Organize → Organize by</strong>.</p>
+
+<p><strong>Reference — the default.</strong> Nothing moves, nothing is renamed, nothing is deleted. Each document is recorded in Bibliome's catalog with its category, and (unless you turn it off in Settings → File Types) tagged with that category in Finder. Your folders stay exactly as they are. In this mode the button is called <strong>Tag Documents in Place</strong>, and duplicate detection, filename cleanup, and the folder-based passes do not run, because there are no folders to run them against.</p>
+
+<p><strong>Move.</strong> Documents are moved into your library folder, filed into category folders. The originals are gone from where they were.</p>
+
+<p><strong>Copy.</strong> The same, but the originals stay where they are.</p>
+
+<p><strong>Watch out:</strong> the mode changes what the button promises. In Reference mode it will not de-duplicate, clean up filenames, or create folders — that is the mode working as designed, not a failure.</p>
+
+<h3>What runs, in order (Move and Copy)</h3>
+<p>Reading scanned documents, filename cleanup, the keyword pass, duplicate detection, AI classification, a placement audit, metadata lookup, research-paper cataloguing, a last pass over anything still uncategorized, then the word index and the meaning index. The checklist on screen shows each step, and the time estimate calibrates itself against your own Mac over successive runs.</p>
+
+<h3>The category review</h3>
+<p>The first time Bibliome derives a list of categories from your own documents, it stops and shows you the list before filing anything. Rename, merge, or delete any of them, then <strong>Accept</strong>. To derive a fresh list later, use <strong>Suggest Categories</strong>; to throw the old list away and re-check every document against a new one, use <strong>Start from Scratch</strong>.</p>
+
+<p><strong>Press Stop any time.</strong> Progress is saved and the next run picks up where it left off.</p>
+</section>
+
+<hr>
+
+<section id="reading-marking-up">
+<h2>Reading &amp; marking up</h2>
+
+<p><strong>View Library</strong> gives you your documents on the left and a full reader on the right. Drag the divider to resize it; the width is remembered.</p>
+
+<ul>
+  <li><strong>Unread</strong> documents are bold with a dot. Right-click → <strong>Mark as Read</strong>.</li>
+  <li><strong>Highlight</strong> — select text, then click <strong>Highlight</strong>. The <strong>▾</strong> picks yellow, green, pink, or blue. Highlights are written into the PDF itself, so Preview and every other reader sees them. Highlighting the same text again swaps the colour rather than stacking.</li>
+  <li><strong>Undo Highlight</strong> / <strong>Redo Highlight</strong> sit right beside it.</li>
+  <li><strong>Note</strong> — attach a sticky note to your selection.</li>
+  <li><strong>Flag</strong> marks a document to come back to. The flag is a real Finder tag called <em>Follow-up</em>, so Finder and Spotlight see it too and it survives without Bibliome.</li>
+  <li><strong>Export Highlights…</strong> saves every highlight and note as Markdown, plain text, or CSV. Choose the format in Settings. The Markdown version links each quote back to its exact page, so a click in Obsidian or Logseq reopens it in Bibliome.</li>
+  <li><strong>Find in document</strong> is <strong>⌘F</strong>.</li>
+  <li>The <strong>hand tool</strong> drags the page around and is on by default. To select text instead, hold <strong>⌘</strong> and drag, or switch the hand off.</li>
+  <li><strong>Sort</strong> orders the documents inside a folder by name, date modified, date added, or size. Folders themselves stay in name order.</li>
+  <li>Right-click any document for <strong>Rename</strong>, <strong>Move to Category</strong>, <strong>Reassess Category</strong>, <strong>Quick Look</strong>, <strong>Summarize</strong>, <strong>Copy Citation</strong>, <strong>Copy Link</strong>, and <strong>Move to Trash</strong>.</li>
+  <li><strong>⌘-click</strong> or <strong>shift-click</strong> to select several documents. A bar appears with actions that apply to all of them at once.</li>
+</ul>
+
+<p><strong>Filed in the wrong place?</strong> <strong>Move to Category</strong> puts it where you say. <strong>Reassess Category</strong> asks the AI to look again, explicitly excluding the category it is in now, so it cannot re-file it in place.</p>
+</section>
+
+<hr>
+
+<section id="finding-things">
+<h2>Finding things</h2>
+
+<h3>Word Search</h3>
+<p>Exact words, with stemming — <em>run</em> finds <em>running</em>. Ranked by relevance, with a snippet showing the match in context. Scanned documents are searchable too, once their text has been read.</p>
+
+<h3>Meaning</h3>
+<p>Finds documents <em>about</em> an idea even when they use different words. Search "lowering my electric bill" and it surfaces the guide that says "reduce consumption". It leads with word matches and adds what only meaning search finds, so it is never worse than Word Search.</p>
+
+<p>Both indexes are built by the main organize pass, every time it runs, in every mode.</p>
+</section>
+
+<hr>
+
+<section id="ask-summarize">
+<h2>Ask &amp; Summarize</h2>
+
+<h3>Ask Your Library</h3>
+<p>Ask a real question and get a written answer, produced on your own machine, from your own documents, with clickable citations. Click a citation to jump to that page with the passage highlighted.</p>
+
+<ul>
+  <li>Scope an answer to your <strong>Entire Library</strong> or a single <strong>Smart Group</strong>.</li>
+  <li>Past questions are kept under <strong>Recent questions</strong>.</li>
+  <li><strong>Export</strong> an answer as Markdown, plain text, or CSV, or <strong>Copy</strong> it. <strong>Export all…</strong> writes your whole history to one file.</li>
+  <li>The first question of a session takes a few extra seconds while the local model warms up.</li>
+</ul>
+
+<p>Ask needs the meaning index. If it says there is none, run <strong>Build Meaning Index</strong>, or just run the main organize pass, which builds it last.</p>
+
+<p><strong>On a Mac with Apple Intelligence</strong>, Settings → Ask Your Library has a <strong>Faster answers</strong> toggle: roughly two and a half times quicker, a little less detailed. Off by default. Either way nothing leaves your Mac.</p>
+
+<h3>Summarize a Document</h3>
+<p>A summary of one document, written by the same on-device model. Open <strong>Summarize a Document</strong>, or right-click any document and choose <strong>Summarize</strong>. Summaries are kept, so a document you have already summarized shows its saved summary first. A very long document is summarized as far as the model can read in one go, and a note under the summary says how many pages that covered.</p>
+</section>
+
+<hr>
+
+<section id="smart-groups">
+<h2>Smart Groups</h2>
+
+<p>Saved views that update themselves. They are never folders of moved files; they re-resolve against your library every time you open one.</p>
+
+<p><strong>Built in:</strong> Recently Added, Flagged, Invoices &amp; Receipts, Research Papers.</p>
+
+<p><strong>Your own</strong> — click <strong>New Smart Group…</strong> and combine any of: a keyword, a list of any-of terms, a meaning match, one category, flagged only, a page limit, and modified-within-N-days. A Smart Group can also scope an Ask, or an export.</p>
+</section>
+
+<hr>
+
+<section id="tools">
+<h2>Tools</h2>
+
+<p>Everything the main button does, plus everything it does not, available on its own. Tools are grouped by what you are trying to do, and the search box matches descriptions as well as names — type what you want to <em>do</em>, not what you think it is called.</p>
+
+<p><strong>Library.</strong> The main organize button. <strong>Index My Library</strong> reads and indexes everything where it sits without categorizing, tagging, or renaming anything.</p>
+
+<p><strong>Add &amp; Organize.</strong> <strong>Import Documents</strong> (from Files, iCloud Drive, or any folder). <strong>Move from Evernote</strong> (a <code>.enex</code> export — you tick what comes in, and images are off by default because that is where logos and signatures live). <strong>Scan with iPhone</strong> (use a nearby iPhone or iPad as a scanner).</p>
+
+<p><strong>Edit a PDF.</strong> <strong>Redact a PDF</strong> — draws boxes, or finds personal information for you, then permanently destroys the text underneath rather than covering it, and refuses to save if any redacted text survived. <strong>Markup Document</strong> — draw, shapes, stamps, images, a signature, a text box, and rotate, reorder, or delete pages. <strong>Images → PDF</strong>. <strong>Word → PDF</strong>. <strong>Export Pages as Images</strong>. <strong>Compress PDF</strong>.</p>
+
+<p><strong>Duplicates.</strong> <strong>Review Duplicates</strong> groups copies by content and lets you pick the keeper; only the others go to the Trash. <strong>Delete Duplicates</strong> empties the quarantine folder that Move and Copy mode create. Nothing is ever deleted without you saying so, and Bibliome's own backup folders are never candidates.</p>
+
+<p><strong>Make Searchable.</strong> <strong>Index Scanned PDFs</strong> reads image-only scans into the search database — your files are not changed. <strong>Embed Text Layer in Scans</strong> writes the recognized text into the file so it is selectable in any PDF app; this is the one tool that modifies your documents, and it copies each original to a backup folder first. <strong>Rebuild Search Index</strong>. <strong>Build Meaning Index</strong>.</p>
+
+<p><strong>Metadata &amp; Citations.</strong> <strong>Extract Metadata</strong> writes each document's category and themes into the file and into Finder. <strong>Sync Finder Tags</strong>. <strong>Export Bibliography</strong> writes a <code>.bib</code> for the library or a Smart Group. <strong>Export Library List</strong> writes a <code>.csv</code> — name, title, category, folder, date added — that opens in Excel or Numbers.</p>
+
+<p><strong>Maintenance.</strong> <strong>Suggest Categories</strong>, <strong>Merge Folders</strong>, <strong>AI Classify</strong> (with the option to re-check documents already filed under your old categories), and <strong>Start from Scratch</strong>.</p>
+
+<p>Tools that change files offer <strong>Dry Run</strong> as well as <strong>Run</strong>. After a tool that moves files, rebuild the indexes so search stays current.</p>
+</section>
+
+<hr>
+
+<section id="scanned-documents">
+<h2>Scanned documents</h2>
+
+<p>A scan is a picture of a page, with no text in it. Bibliome reads scans with on-device text recognition so their words turn up in search and in Ask.</p>
+
+<p><strong>How deep it reads.</strong> Settings → <strong>Scanned documents</strong> sets a page depth, 12 pages by default. Pages past that limit are not partly indexed — they are simply not searchable yet. You can raise the depth, including to every page, and raising it later fills in the missing pages without redoing work already done. A long scan that stopped at the cap gives no per-document warning, so if a long book is not turning up, check this setting first.</p>
+
+<p><strong>When a scan comes out garbled.</strong> Turn on <strong>Check OCR quality</strong> in the same section. The next meaning-index build marks pages that do not read as real text, and the <strong>OCR issues</strong> filter in View Library lists those documents.</p>
+
+<p><strong>Two different tools, easy to confuse.</strong> <em>Index Scanned PDFs</em> makes a scan searchable <strong>inside Bibliome</strong> and never touches the file. <em>Embed Text Layer in Scans</em> writes the text <strong>into the file</strong> so it is selectable everywhere, and it is the only tool here that modifies your documents.</p>
+</section>
+
+<hr>
+
+<section id="settings">
+<h2>Settings</h2>
+
+<ul>
+  <li><strong>Paths</strong> — your library folder and your owner name.</li>
+  <li><strong>Organize</strong> — folders to scan, folders to exclude, the filing mode, whether to process only new documents, and the minimum document size.</li>
+  <li><strong>AI Model</strong> — Bibliome ships with Llama 3.1 8B built in, and every published accuracy figure was measured on it. You can point at another model you have downloaded; Bibliome inspects the folder and tells you whether it is tested, untested, incomplete, or unusable, and re-checks it every launch. <strong>Use Built-in Model</strong> puts it back.</li>
+  <li><strong>MCP</strong> — let other apps read your library. See below.</li>
+  <li><strong>File Types</strong> — which formats to scan besides PDF, and whether Reference mode writes Finder tags.</li>
+  <li><strong>Schedule</strong> — run one long job at a chosen time. Keep the app open and the Mac awake: a sandboxed app cannot wake a sleeping Mac.</li>
+  <li><strong>Privacy</strong> and <strong>Legal</strong> — what runs where, and the licences.</li>
+</ul>
+</section>
+
+<hr>
+
+<section id="iphone-ipad">
+<h2>iPhone &amp; iPad</h2>
+
+<p>The companion app is free and does much of what the Mac does.</p>
+
+<ul>
+  <li><strong>Scan</strong> paper with the camera, or add documents from Files and iCloud Drive.</li>
+  <li><strong>Organize</strong> files them by topic on the device.</li>
+  <li><strong>Read</strong> with highlights and Apple Pencil ink, and look up or explain a selection.</li>
+  <li><strong>Ask</strong> your library, and search it by word or by meaning.</li>
+  <li>Export a bibliography, export notes, rename, sort, and file.</li>
+</ul>
+
+<p><strong>What needs Apple Intelligence.</strong> On iOS 26 with Apple Intelligence switched on, Ask writes you a direct answer. Without it, Ask shows the passages from your own documents that answer the question instead of writing the answer for you. Everything else is unaffected. This is a hardware difference, not a paywall.</p>
+</section>
+
+<hr>
+
+<section id="sync">
+<h2>Sync</h2>
+
+<p>Sync is <strong>off by default</strong>. Turn it on in Settings → Sync and one library is shared across your own Mac, iPhone, and iPad, through your own iCloud account. Reading positions and bookmarks come along.</p>
+
+<p>Bibliome itself never goes online. The syncing is done by macOS and iOS, in your own iCloud, never through anyone else's server. Turn it off and your library stays where it is.</p>
+
+<p>The first download of a large library takes a while.</p>
+</section>
+
+<hr>
+
+<section id="using-your-library-from-other-apps-mcp">
+<h2>Using your library from other apps (MCP)</h2>
+
+<p>Settings → <strong>MCP</strong> lets any app that speaks the Model Context Protocol read your library — Claude, Cursor, Zed, an editor extension, your own code. Copy the config, paste it where that app keeps its MCP servers, and keep Bibliome open while you use it.</p>
+
+<p>The other app gets read-only tools: find documents, ask a question and get an answer with citations, read a document, browse the catalogue, check a claim against your library, and see what is indexed. It cannot move, rename, edit, or delete anything. Nothing is installed, and Bibliome still makes no network connections of its own.</p>
+</section>
+
+<hr>
+
+<section id="troubleshooting">
+<h2>Troubleshooting</h2>
+
+<dl class="trouble">
+  <div class="topic">
+    <dt><strong>The app looks empty after launching.</strong></dt>
+    <dd>Open Settings → Paths and choose your library folder once more. macOS sometimes needs access re-granted, and re-picking the folder restores everything. Nothing was lost.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>View Library and Ask are dimmed.</strong></dt>
+    <dd>They light up after the first successful organize run.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>My documents are in the app but the Folders view is empty.</strong></dt>
+    <dd>Reference mode leaves your files where they are, so there are no category folders to show. Switch the view picker to <strong>Tags</strong>. If you are in Reference mode, that is where your library is.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>Documents are filed under obviously wrong categories.</strong></dt>
+    <dd>Fix one with <strong>Move to Category</strong>, or let the AI look again with <strong>Reassess Category</strong>. To fix a whole library at once, run <strong>Start from Scratch</strong>: it proposes a fresh set of categories, lets you edit them, and then re-checks <em>every</em> document, not just new ones. A plain re-run will not do this — it skips documents it has already filed.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>A password-protected document did not get indexed.</strong></dt>
+    <dd>Bibliome cannot read an encrypted PDF's text and will not rewrite one, because rewriting it would strip the protection you put on it. Remove the password in Preview (open it, enter the password, then File → Export as PDF without a password) and re-run the scan.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>Search finds nothing.</strong></dt>
+    <dd>Run the main organize button, which builds the index, or <strong>Rebuild Search Index</strong> from Tools.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>Part of my library is missing from search, and it lives in iCloud Drive, Dropbox, or Google Drive.</strong></dt>
+    <dd>Only files already downloaded to this device are read. Bibliome checks whether a file is still an "online only" placeholder and skips it rather than hang waiting for a download. Set your cloud app to keep that folder downloaded, then rebuild the index. Bibliome tells you how many documents it had to skip for this reason, and offers to download them.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>A long scanned book only turns up by its first few pages.</strong></dt>
+    <dd>That is the OCR page depth, 12 pages by default. Raise it in Settings → Scanned documents; raising it later fills in the rest without redoing what is done.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>A scanned page's text comes out as nonsense.</strong></dt>
+    <dd>Poor scan quality. Turn on <strong>Check OCR quality</strong>, rebuild the meaning index, and use the <strong>OCR issues</strong> filter to find the documents affected.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>I highlighted something and nothing happened.</strong></dt>
+    <dd>Select the text first, then click Highlight. If the hand tool is on, hold ⌘ while dragging to select.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>I cannot find a tool I know exists.</strong></dt>
+    <dd>Search in Tools — it matches what a tool <em>does</em>, not only what it is called. Two things are worth knowing by both names: the main button is called <strong>Tag Documents in Place</strong> in Reference mode and <strong>Auto-File into Folders</strong> in the others, and <strong>Move to Category</strong> is what re-files a single document.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>A scheduled run did not happen.</strong></dt>
+    <dd>Bibliome has to be open and the Mac awake at the time. A sandboxed app cannot wake a sleeping Mac.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>Duplicates.</strong></dt>
+    <dd>Nothing is deleted behind your back. Copies are set aside in a quarantine folder; <strong>Review Duplicates</strong> lets you choose keepers, and <strong>Delete Duplicates</strong> empties the quarantine to the Trash when you are ready.</dd>
+  </div>
+  <div class="topic">
+    <dt><strong>Something else, or something here did not work.</strong></dt>
+    <dd>Email us. Tell us the version — it is in <strong>About Bibliome</strong> — and what you saw. Bugs from customers are how most of this app got fixed.</dd>
+  </div>
+</dl>
+</section>
+
+<hr>
+
+<section id="still-stuck">
+<h2>Still stuck?</h2>
+
+<p>Email <strong>info@psychosonicconsulting.com</strong> and we will help. If it is an accessibility problem, put "Accessibility" in the subject and it goes to the front of the queue.</p>
+</section>
+
+<footer>Bibliome runs entirely on your device. We collect nothing.</footer>
+
+</body>
+</html>
